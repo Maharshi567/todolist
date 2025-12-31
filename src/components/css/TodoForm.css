@@ -1,0 +1,95 @@
+/* Import elegant font */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #f4f7fc; /* soft background */
+}
+
+/* Container */
+.todo-container {
+  max-width: 700px;
+  margin: 50px auto;
+  padding: 0 15px;
+}
+
+/* Form card */
+.todo-form {
+  background: #ffffff;
+  border-radius: 15px;
+  padding: 30px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+}
+
+.todo-form:hover {
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.12);
+}
+
+/* Heading */
+.todo-heading {
+  font-weight: 700;
+  color: #1e90ff; /* Dodger Blue accent */
+  margin-bottom: 25px;
+}
+
+/* Input fields */
+.input-field {
+  border-radius: 50px;
+  border: 1px solid #cbd5e1;
+  padding: 10px 15px;
+  transition: all 0.3s ease;
+  background-color: #f8fafc;
+}
+
+.input-field:focus {
+  border-color: #1e90ff;
+  box-shadow: 0 0 10px rgba(30, 144, 255, 0.3);
+  background-color: #ffffff;
+  outline: none;
+}
+
+/* Labels */
+.form-label h5 {
+  font-weight: 500;
+  color: #334155; /* soft dark gray */
+}
+
+/* Gradient button */
+.btn-gradient {
+  background: linear-gradient(135deg, #1e90ff, #63b3ed);
+  color: #fff;
+  font-weight: 600;
+  padding: 10px 30px;
+  border-radius: 50px;
+  border: none;
+  transition: all 0.3s ease;
+}
+
+.btn-gradient:hover {
+  background: linear-gradient(135deg, #63b3ed, #1e90ff);
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(30, 144, 255, 0.4);
+}
+
+/* Responsive tweaks */
+@media (max-width: 576px) {
+  .form-group {
+    flex-direction: column;
+  }
+  .col-sm-2,
+  .col-sm-10 {
+    width: 100%;
+  }
+  .col-sm-2 {
+    margin-bottom: 5px;
+  }
+}
+/* Make sure label text has enough width and doesn't get cut off */
+label.col-sm-2.col-form-label {
+  white-space: nowrap; /* prevent text wrap */
+  width: auto; /* allow label to auto size */
+  min-width: 110px; /* adjust this as needed */
+  font-weight: 600; /* keep it bold for clarity */
+  color: #111827; /* dark color for good contrast */
+}

@@ -1,0 +1,61 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #f4f7fc; /* consistent with form background */
+}
+
+/* Container styling */
+.todos-container {
+  max-width: 700px;
+  margin: 50px auto 80px auto;
+  padding: 0 15px;
+}
+
+/* Heading */
+.todos-heading {
+  font-weight: 700;
+  color: #1e90ff; /* Dodger Blue */
+  margin-bottom: 30px;
+  font-size: 2.2rem;
+}
+
+/* No todos message */
+.no-todos-text {
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: #64748b; /* soft gray */
+  text-align: center;
+  margin-top: 40px;
+}
+
+/* List wrapper */
+.todos-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* If TodoItem passes down className, style it as card */
+.todo-item {
+  background-color: #ffffff;
+  border-radius: 15px;
+  padding: 20px 25px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
+  transition: box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.todo-item:hover {
+  box-shadow: 0 20px 50px rgba(30, 144, 255, 0.25);
+}
+
+/* Responsive tweaks */
+@media (max-width: 576px) {
+  .todos-container {
+    margin: 30px 10px 50px 10px;
+  }
+  .todos-heading {
+    font-size: 1.8rem;
+  }
+}

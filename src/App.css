@@ -1,0 +1,21 @@
+#h1 {
+  color: blue;
+}
+
+#p1 {
+  font-size: large;
+}
+
+#footer {
+  position: absolute;
+  top: auto;
+  width: 100%;
+  border: 2px solid dodgerblue;
+}
+
+#Heading {
+  color: red;
+}
+#Heading2 {
+  color: red;
+}
