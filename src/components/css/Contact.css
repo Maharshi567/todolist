@@ -140,3 +140,108 @@
     width: 80%;
   }
 }
+/* Premium Feedback Section */
+.premium-feedback {
+  margin-top: 40px;
+  padding: 25px;
+  background: #fafafa;
+  border-radius: 14px;
+  border: 1px solid #eaeaea;
+}
+
+.feedback-title {
+  margin-bottom: 20px;
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #222;
+}
+
+.feedback-empty {
+  color: #777;
+  font-style: italic;
+}
+
+/* Feedback Cards */
+.premium-card {
+  background: #ffffff;
+  padding: 18px 20px;
+  border-radius: 12px;
+  margin-bottom: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.04);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.premium-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.06);
+}
+
+.feedback-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.feedback-name {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #111;
+}
+
+.feedback-time {
+  font-size: 0.8rem;
+  color: #999;
+}
+
+.feedback-message {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #444;
+}
+
+.manage-feedback-btn-wrapper {
+  text-align: center;
+  margin-top: 25px;
+}
+
+.admin-form {
+  margin-top: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.admin-form input {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.admin-actions {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.btn-delete {
+  background: #d9534f;
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.btn-delete:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}
+
+.feedback-checkbox {
+  margin-bottom: 10px;
+}
+
+.admin-message {
+  margin-top: 10px;
+  font-size: 0.9rem;
+}
